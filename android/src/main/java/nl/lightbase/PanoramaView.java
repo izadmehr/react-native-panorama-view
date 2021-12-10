@@ -119,6 +119,7 @@ public class PanoramaView extends VrPanoramaView implements LifecycleEventListen
 
     public void setEnableTouchTracking(boolean enableTouchTracking) {
         setTouchTrackingEnabled(enableTouchTracking);
+        setPureTouchTracking(enableTouchTracking);
     }
 
     class ImageLoaderTask extends AsyncTask<Pair<String, VrPanoramaView.Options>, Void, Boolean> {
