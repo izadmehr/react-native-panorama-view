@@ -380,8 +380,7 @@ import ImageIO
             // to the sensor data and smoothly move
             // with both at the same time
 
-            // if both, just accumulate, our sensor callback will handle it
-            if(controlMethod == .both){
+            if(controlMethod == .motion){
                 // Use the pan translation along the x axis to adjust the camera's rotation about the y axis (side to side navigation).
                 let yScalar = Float(translationDelta.x / self.bounds.size.width)
                 let yRadians = yScalar * MaxPanGestureRotation
